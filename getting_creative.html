@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<title>take on the creative process.</title>
+
+    <script type="text/javascript" src="//use.typekit.net/iop4ruo.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="stylesheet" href="lib/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="lib/css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="lib/css/style.css" type="text/css" />
+    <link rel="icon" href="http://alexisbritt.com/favicon.ico" type="image/x-icon">
+
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="lib/js/jquery.isotope.js" type="text/javascript"></script> 
+    <script src="lib/js/modernizr-latest.js"></script>
+
+</head>
+<body>
+    <footer id="dropdown" class="text-center">
+        <h2><a target="_blank" href="http://www.linkedin.com/in/alexisbritt">view my Linkedin profile,</a></h2> 
+        <h2><a target="_blank" href="mailto:hello@alexisbritt.com">or maybe just say a quick hello.</a></h2>
+        <a href="#" id="close">Close</a>
+    </footer>
+    <header role="banner">
+        <div class="partial center clearfix">
+        <a href="http://alexisbritt.com"><img src="lib/assets/img/logo.png" alt="alexis britt's personal logo"></a>
+            <nav role="navigation" class="align-right">
+                <ul class="clearfix">
+                    <li><a id="contact" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section role="main">
+        <div id="splash" class="partial center clearfix">
+            <h2 class="center start"><a href="http://alexisbritt.com">my creative process is</a></h2>
+            <br>
+            <div class="rw-sentence rw-words rw-words-1"> 
+                <span><h3>1. choose</h3></span>
+                <span><h3>2. learn & research</h3></span>
+                <span><h3>3. refine & apply</h3></span>
+                <span><h3>4. make, make, and make again</h3></span>
+                <span><h3>5. critique (if not 100%, go back to step 3)</h3></span>
+                <span><h3>6. present</h3></span>
+            </div>
+        </div>
+    </section>
+    <br class="clear"/>
+    <section id="workwithme">
+        <div id="rights" class="full center text-center">
+            <h4>&copy;2015 alexis britt. creativity takes courage - henri matisse</h4>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            var $ddmenu = $('footer#dropdown')
+            $('a#contact').click(function(e){
+                    e.preventDefault();
+                    $ddmenu.slideToggle();
+                });
+            $('a#close').click(function(e){
+                    e.preventDefault();
+                    $ddmenu.slideToggle();
+                });
+        });
+    </script>
+
+</body>
+</html>

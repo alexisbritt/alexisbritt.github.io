@@ -1,0 +1,170 @@
+/*
+* BASIC STATIC SITE GRID SKELETON
+* Snippet adapted, added to and commented by @justinmetros 25/4/12 for AAU249.03
+* BIG UPS -> Dave Gamache's glorious responsive boilerplate www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* *****************************************************************************
+
+* BASE 960 GRID
+
+* These classes can be combined to create layouts that are a total 960px wide.
+* The grid has 16 columns, each with a content width of 40px, a 10px left margin 
+* and a 10px right margin for a total element width of 60px;
+* When building your layouts, totals should generally add up to sixteen columns. 
+* You may need to manually clear columns if the row's classnames dont add up to 16. 
+* ( Power-Clearing included ;)
+* Special one-third and two-third classes available for 3-Column layouts, 
+* since 16 is not divisible by 3 evenly.
+* Use wisely, and note that this isnt the best solution to every problem, 
+* it is just a generally pleasent way to work with regular grids.
+* Modify and adapt as needed, this isnt written in stone.  
+* Changing values willy-nilly, however, may cause more ills than it cures 
+******************************************************************************* */
+
+/* MAIN CONTAINER 
+* All columns should go in a container */
+.container                      { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+
+/* Float all the things! ( fancy clearing included! ) Columns get L/R margins, rows get bottom margins */
+.column,
+.columns                        { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+/* rows are optional. they add bottom margins */
+.row                            { margin-bottom: 20px; }
+
+/* NESTED COLUMN CLASSES
+* append the .alpha class to the first item in a row to remove its left margin 
+* append the .omega class to the last item in a row to remove its right margin 
+* Theres two of each for grammer purposes, column & columns */
+.column.alpha, .columns.alpha    { margin-left: 0; }
+.column.omega, .columns.omega    { margin-right: 0; }
+
+/* Base Grid */
+.one.column,
+.one.columns                     { width: 40px;  }
+.two.columns                     { width: 100px; }
+.three.columns                   { width: 160px; }
+.four.columns                    { width: 220px; }
+.five.columns                    { width: 280px; }
+.six.columns                     { width: 340px; }
+.seven.columns                   { width: 400px; }
+.eight.columns                   { width: 460px; }
+.nine.columns                    { width: 520px; }
+.ten.columns                     { width: 580px; }
+.eleven.columns                  { width: 640px; }
+.twelve.columns                  { width: 700px; }
+.thirteen.columns                { width: 760px; }
+.fourteen.columns                { width: 820px; }
+.fifteen.columns                 { width: 880px; }
+.sixteen.columns                 { width: 940px; }
+/* Some special classes to make three column grids */
+.one-third.column                { width: 300px; }
+.two-thirds.column               { width: 620px; }
+
+/* OFFSETS
+* Use these to add 'empty columns' before your content columns */
+.offset-by-one                   { padding-left: 60px;  }
+.offset-by-two                   { padding-left: 120px; }
+.offset-by-three                 { padding-left: 180px; }
+.offset-by-four                  { padding-left: 240px; }
+.offset-by-five                  { padding-left: 300px; }
+.offset-by-six                   { padding-left: 360px; }
+.offset-by-seven                 { padding-left: 420px; }
+.offset-by-eight                 { padding-left: 480px; }
+.offset-by-nine                  { padding-left: 540px; }
+.offset-by-ten                   { padding-left: 600px; }
+.offset-by-eleven                { padding-left: 660px; }
+.offset-by-twelve                { padding-left: 720px; }
+.offset-by-thirteen              { padding-left: 780px; }
+.offset-by-fourteen              { padding-left: 840px; }
+.offset-by-fifteen               { padding-left: 900px; }
+
+
+/* *****************************************************************************
+* MAGIC MARGIN REMOVERS!
+* Simple use of 'fancy' CSS selectors
+* Useful when nesting a grid of elements
+* Add these styles to the PARENT element to remove margins when an element's children form a structured grid.
+* N is a variable, and it iterates upward starting at 0. 
+* An example of how your browser calculates this for a 3-column grid
+*   3*0+1 = 1st element ( first item in row 1)
+*   3*0+3 = 3rd element ( last item in row 1 )
+*   3*1+1 = 4th element ( first item in row 2)
+*   3*1+3 = 6th element ( last item in row 2 )
+*   ... ad infidem 
+* see this handy page for more info: http://vogtjosh.com/selectors/ 
+* Add classes as needed for grids with more than 6 columns ( maybe a grid of tiny thumbnails? )
+* Yours truly, @justinmetros 
+******************************************************************************* */
+/* Two Column Grid Helper */
+.grid-two > div:first-child{ margin-left:0}
+.grid-two > div:last-child{ margin-right:0}
+/* Three Column Grid Helper */
+.grid-three > div:nth-child( 3n + 1 ){ margin-left:0} 
+.grid-three > div:nth-child( 3n + 3 ){ margin-right:0}
+/* Four Column Grid Helper */
+.grid-four > div:nth-child( 4n + 1 ){ margin-left:0} 
+.grid-four > div:nth-child( 4n + 4 ){ margin-right:0}
+/* Six Column Grid Helper */
+.grid-six > div:nth-child( 6n + 1 ){ margin-left:0} 
+.grid-six > div:nth-child( 6n + 6 ){ margin-right:0}
+
+
+/* *****************************************************************************
+* CLEARING
+******************************************************************************* */
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+				/* content: "\0020" <-- this is an ASCII character for empty space, as in spacebar. 
+				   Basically, a hack clearing with an invisible tiny little element :) */
+				
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0; 
+}
+
+.row:after,
+.clearfix:after {
+	clear: both; 
+}
+
+.row,
+.clearfix {
+	zoom: 1; 
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.align-left {float: left;}
+.align-right {float:right;}
+.center {margin: 0 auto;}
+.text-center {text-align: center;}
+.text-right {text-align: right}
+.gutter-right { margin-right: 15px;}
+.gutter-left {margin-left: 15px;}
+
+.full {width: 1140px;}
+.partial {width: 960px;}
+.big {width: 65%;}
+.medium {width:35%;}
+.small {width: 30%;}
