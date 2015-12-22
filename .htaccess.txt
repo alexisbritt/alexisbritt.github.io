@@ -1,1 +1,2 @@
-DirectoryIndex atDisney.html
+//301 Redirect Old File
+Redirect 302 /index.html /atDisney.html
