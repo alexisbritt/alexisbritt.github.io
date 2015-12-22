@@ -1,1 +1,1 @@
-Redirect /index.html http://alexisbritt.is/atDisney.html
+DirectoryIndex atDisney.html
