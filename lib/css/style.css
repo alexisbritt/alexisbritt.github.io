@@ -212,7 +212,7 @@ h2.start {
   -o-animation-delay: 0s; 
   -ms-animation-delay: 0s; 
   animation-delay: 0s; 
-  color: #9b59b6;
+  color: rgba(51, 153, 102, .6);
 }
 
 .rw-words-1 span:nth-child(2) { 
@@ -221,7 +221,7 @@ h2.start {
   -o-animation-delay: 3s; 
   -ms-animation-delay: 3s; 
   animation-delay: 3s; 
-  color: #2ecc71;
+  color: rgb(255, 153, 51);
 }
 .rw-words-1 span:nth-child(3) { 
     -webkit-animation-delay: 6s; 
@@ -229,7 +229,7 @@ h2.start {
   -o-animation-delay: 6s; 
   -ms-animation-delay: 6s; 
   animation-delay: 6s; 
-  color: #f1c40f; 
+  color: rgb(239, 70, 59); 
 }
 .rw-words-1 span:nth-child(4) { 
     -webkit-animation-delay: 9s;
@@ -237,7 +237,7 @@ h2.start {
   -o-animation-delay: 9s; 
   -ms-animation-delay: 9s; 
   animation-delay: 9s; 
-  color: #FC4349; 
+  color: rgba(51, 153, 102, .6);
 }
 
 .rw-words-1 span:nth-child(5) { 
@@ -246,7 +246,7 @@ h2.start {
   -o-animation-delay: 12s; 
   -ms-animation-delay: 12s; 
   animation-delay: 12s;
-  color: #3498db;
+  color: rgb(255, 153, 51);
 }
 
 .rw-words-1 span:nth-child(6) { 
@@ -255,7 +255,7 @@ h2.start {
   -o-animation-delay: 15s; 
   -ms-animation-delay: 15s; 
   animation-delay: 15s;
-  color: #ff0375;
+  color: rgb(239, 70, 59);
 }
 
 @-webkit-keyframes rotateWord {
@@ -544,14 +544,15 @@ footer.single-top {display: none}
 }
 
 #quote h3, #prompt h3{
-    border-bottom: 0px;
     margin-top: 10px;
+    font-size: .8em;
 }
 
 #quote{
 	background-color: rgba(51, 153, 102, .4);
   color: #FFF;
   display: inline-block;
+
 }
 #quote a{
   color: #FFF;
@@ -566,6 +567,7 @@ footer.single-top {display: none}
 
 #prompt h3 a{
   font-weight: 900;
+  font-size: .8em;
   color: #FFF;
   text-transform: uppercase;
 }

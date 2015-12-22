@@ -1,5 +1,82 @@
+<!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<title>alexis britt is making magic.</title>
+
+    <script type="text/javascript" src="//use.typekit.net/iop4ruo.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="stylesheet" href="lib/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="lib/css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="lib/css/style.css" type="text/css" />
+    <link rel="icon" href="http://alexisbritt.com/favicon.ico" type="image/x-icon">
+
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="lib/js/jquery.isotope.js" type="text/javascript"></script> 
+    <script src="lib/js/modernizr-latest.js"></script>
+
+</head>
 <body>
-  
+    <footer id="dropdown" class="text-center">
+        <h2><a target="_blank" href="http://alexisbritt.is/lib/assets/files/AlexisBritt_resume.pdf">here's my résumé,</a></h2>
+        <h2><a target="_blank" href="http://www.linkedin.com/in/alexisbritt">view my Linkedin profile,</a></h2> 
+        <h2><a target="_blank" href="mailto:hello@alexisbritt.com">or maybe just say a quick hello.</a></h2>
+        <a href="#" id="close">Close</a>
+    </footer>
+    <header role="banner">
+        <div class="partial center clearfix">
+        <a href="http://alexisbritt.com"><img src="lib/assets/img/logo.png" alt="alexis britt's personal logo"></a>
+            <nav role="navigation" class="align-right">
+                <ul class="clearfix">
+                    <li><a id="contact" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section role="main">
+        <div id="splash" class="partial center clearfix">
+            <h2 class="center start"><a href="http://alexisbritt.com">alexis britt</a></h2> 
+            <div class="rw-sentence rw-words rw-words-1"> 
+                <span><h3>is a visual &#43; interactive designer based in San Francisco.</h3></span>
+                <span><h3>is currently making magic at Disneyland.</h3></span>
+                <span><h3>is super fun.</h3></span>
+                <span><h3>is looking for the next adventure.</h3></span>
+                <span><h3>will be graduating with her BFA in web design &#38; new media.</h3></span>
+                <span><h3>is updating her portfolio.</h3></span>
+            </div>
+        </div>
+    </section>
+    <br class="clear"/>
+    <section id="workwithme">
+        <div id="quote" class="big align-left">
+             <h3 class="gutter-left gutter-right">feel free to just say <a target="_blank" href="mailto:hello@alexisbritt.com">hello.</a></h3>
+        </div>
+        <div id="prompt" class="medium align-right">
+            <h3 class="gutter-right gutter-left"><a target="_blank" href="http://alexisbritt.com/portfolio.html">view past portfolio</a></h3>
+        </div>
+        <br class="clear"/>
+        <div id="rights" class="full center text-center">
+            <h4>&copy;2015 alexis britt. &#176;o&#176;</h4>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            var $ddmenu = $('footer#dropdown')
+            $('a#contact').click(function(e){
+                    e.preventDefault();
+                    $ddmenu.slideToggle();
+                });
+            $('a#close').click(function(e){
+                    e.preventDefault();
+                    $ddmenu.slideToggle();
+                });
+        });
+    </script>
+
 </body>
 </html>
