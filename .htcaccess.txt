@@ -1,1 +1,1 @@
-Redirect 302 / http://alexisbritt.is/atDisney.html
+Redirect /index.html http://alexisbritt.is/atDisney.html
