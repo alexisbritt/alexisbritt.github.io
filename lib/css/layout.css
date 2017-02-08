@@ -26,14 +26,14 @@
 
 /* MAIN CONTAINER 
 * All columns should go in a container */
-.container                      { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.container                      { position: relative; width: 100vw; margin: 0 auto;}
 
 
 /* Float all the things! ( fancy clearing included! ) Columns get L/R margins, rows get bottom margins */
 .column,
 .columns                        { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
 /* rows are optional. they add bottom margins */
-.row                            { margin-bottom: 20px; }
+.row                            { }
 
 /* NESTED COLUMN CLASSES
 * append the .alpha class to the first item in a row to remove its left margin 
@@ -163,8 +163,10 @@ or wrap each row of columns in a <div class="row"> */
 .gutter-right { margin-right: 15px;}
 .gutter-left {margin-left: 15px;}
 
-.full {width: 1140px;}
-.partial {width: 960px;}
-.big {width: 65%;}
-.medium {width:35%;}
-.small {width: 30%;}
+.full {width: 90vw;}
+.partial {width: 80vw;}
+.big {width: 70vw;}
+.medium {width:50vw;}
+.small {width: 30vw;}
+.x-small{width: 25vw;}
+
