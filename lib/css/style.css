@@ -839,7 +839,9 @@ footer.single-top {display: none}
   h2 a {display: block;}
 }
 
-
+@media screen and (max-width: 520px) {
+  nav[role="navigation"].align-right {display:none;}
+}
 @media screen and (max-width: 330px) {
   .full {width: 100vw;}
   .partial {width: 100vw;}
