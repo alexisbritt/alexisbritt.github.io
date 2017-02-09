@@ -777,7 +777,7 @@ footer.single-top {display: none}
   body { font-size:1.2rem; line-height:2.2rem; }
   h1.align-left {text-align:center; float:none; margin: 0 auto;}
   header a img{ margin-top: -75px; float: none;}
-  nav[role="navigation"].align-right {width: 250px; float:none; margin: 30px auto 0px;}
+  nav[role="navigation"].align-right {width: 250px; float:none; margin: 30px auto 0px; display:none;}
   header[role="banner"] {padding-top: 75px; border-bottom: none; margin-bottom: 1em;}
   ul.portfolioFilter {display: none}
   footer#dropdown h2 { font-size:1rem; line-height:1.5rem; }
